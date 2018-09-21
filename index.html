@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Table</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  
+</head>
+<body>
+        <div class = "myTableClass">
+                <h1>HTML Table Generator</h1>
+                Generate Column
+                <input  id="input-row" type="text" placeholder="Enter Number of Column" >
+                Generate Row
+                <input type="text"  id="input-col" placeholder="Enter Number of Rows"><br/><hr>
+                <input type="color" id="color-table"> Table Backgroundcolor:
+                <input type="color" id="color-head"> Head Backgroundcolor:
+                <input type="color" id="color-border"> Boder Color:
+                <input type="color" id="color-font"> Font Color:
+                <hr>
+                <input type="text" id= "input-table-width" placeholder="table width in %"> Table Width in percentage:
+                
+               
+                <input type="text" id= "input-border-width" placeholder="border width in px"> Border Width in px:<br/>
+                <hr>
+                Font Type
+                <select class = "fontSelect" >
+                    <option value="italic,arial,serif"> Italic,arial,serif</option>
+                    <option   value="Impact,Charcoal,sans-serif">Impact,Charcoal,sans-serif</option>
+                  </select> 
+                  Text Align
+                  <select class = "alignSelect" >
+                      <option  value="left"> Left </option>
+                      <option  value="right">Right</option>
+                      <option  value="center">Center </option>
+                    </select> 
+                    Font Weight
+                    <select class = "fontWeight" >
+                        <option  value="50"> 50 </option>
+                        <option  value="100">10</option>
+                        <option  value="200">200</option>
+                        <option  value="500"> 500 </option>
+                        <option  value="600">600</option>
+                        <option  value="900">900 </option>
+                      </select> 
+
+                <hr>
+                <button class ="btn-generate"> Genrate</button>
+                
+                <table id="my-table">
+                </table>
+        </div>
+     
+    <div class ="wrapper"> </div>
+   
+    
+   
+    
+<script src="myscripts.js"></script> 
+</body>
+</html>
